@@ -1,0 +1,21 @@
+// if can have anothaer one in this case video then its a component
+
+.bg-video {
+    position: absolute;
+    // parent section stories in home set to rel
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; //so of parents witch
+    z-index: -1;
+    opacity: .15;
+    overflow: hidden;
+    // so it still overflowed after setting object fit- which set the height and aspect ratio well but overflowed
+
+    &__content {
+        height: 100%;
+        width: 100%; //so of parents witch
+
+object-fit: cover;//similar to bg cover but in this case for an ele instead of the bg 
+    }
+}

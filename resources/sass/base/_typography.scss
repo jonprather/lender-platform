@@ -1,0 +1,106 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    /* later we change 16px to 67.5 % so that can use rems and be resizable to user */
+    line-height: 1.7;
+    color:$color-grey-dark;
+   
+    /* padding to give it that nice white border so it looks more pro like a mag */
+    /* note tht padding isant inherited thais just goes around the body */
+}
+
+.heading-primary {
+    color:$color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    /* abve is for the shaky animatinion thing apparently whole thing moc=ves and this stops it.. */
+    margin-bottom:6rem;
+
+    &--main {
+        display: block;
+        /* from inline to block so that will use all width and have line breaks whcih for on eover other makes sense */
+        font-size: 6rem;
+        /* bc fint weight higher in h1 than we want we lower it to 400 */
+        font-weight: 400;
+        letter-spacing: 3.5rem; 
+        /* give it that big wide look for outdoors */
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+         padding: 3rem;
+
+         @include respond(phone) {  //<600
+                    letter-spacing: 1rem;
+                    font-size: 5rem; 
+               }
+
+    
+    }
+    
+    &--sub {
+        display: block;
+        font-size:2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        /* other ani props */
+        /* animation-iteration-count: 3; */
+        /* animation-delay: 1s; */
+        animation-timing-function: ease-in-out;
+
+        @include respond(phone) {  //<600
+            letter-spacing: .5rem;
+            // doesnt seem like its there working
+       }
+    }
+    /* animatios optiz=mized for opacity and transform  x  think of neg to left pos to right like graph   -3-2-1 0 1 2 3 */
+    /* for ani to work must specify animation name and duriation */
+
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    // so we need it to not take up 100% of availble width of line so use inline
+    background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+    -webkit-background-clip: text;
+    // clips baacground exactly where the text is so its cut out just like the text
+    // but text tcovers it so
+    color:transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    
+    @include respond(tab-port) {  //<900
+        font-size: 3rem; 
+   }
+
+   
+   @include respond(phone) {  //<600
+    font-size: 2.5rem;
+}
+
+
+    &:hover{
+        transform: skewY(5deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.paragraph {
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

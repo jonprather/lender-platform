@@ -1,0 +1,4 @@
+ .row {
+width:1140px;
+// apparently 1140px is a standard.. but we want it in fluid values like percent;
+ }

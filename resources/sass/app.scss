@@ -1,0 +1,31 @@
+// /*so script is name of method then package then file we go into sass folder  then output file which is style.css -w   the -w is for watch for changes */
+// two things dor easy workflow tow terminals
+// 1 npm run complile:sass  ----this is our pkg.json method
+// 2 live-server after install keep it running
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+
+
+
+@import "layout/grid";
+@import "layout/navigation";
+
+@import "components/button";
+@import "components/bg-video";
+
+
+
+
+
+
+/* include pusedos just to prevent any strange behavior eg if had padding in affter but wasnt border box below its good practice.. */
+
+
+

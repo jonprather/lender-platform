@@ -1,0 +1,60 @@
+// this file is for global definitions
+
+*,*::after, *::before  {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+/* we set font here in body to use the power of inheritance
+remember that text elements usually inherit from parent;more efficient and pro
+*/
+
+
+html {
+    // this defines what 1 rem is
+    font-size: 62.5%;
+    /* 10px bc makes conversion easier that is 1 rem is now 10px so can divide by ten to get rems */
+    /* use % 10/16 -->62.5  to allow user to change font size in browser settings */
+    // go from large to small to ensure due to order small guys get there rules in else the big one always applies
+    // bc its conditonal the large condition is true with anything below 1200 thus if at bottom will overule all
+    // if it is earlier then the smaller ones will overrule the bigger when the condition of being that small is satisfied
+
+    // same idea in reverse for min-width
+    // if a small guy is the last declarition then will always apply bc all screens are atlesast that big (minwidth satistified) and then the bigger 
+    // guys will b=never get applied but if the big guys last then if the screen is big enough(condition of min width large satiesfied) then they will apply
+//    @include respond-phone {
+//          font-size: 50%;
+//          // this is the content passed in...?
+//     }
+
+//     @include respond(phone) {  //<600
+//         font-size: 50%;
+//         // this is the content passed in...?
+//    }//redundant
+@include respond(tab-land) {  //width <900
+    font-size: 56.25%;   //9/16px - 56.25
+    // this is the content passed in...?
+}
+   @include respond(tab-port) { //width<1200
+    font-size: 50%; //8/16px
+    // this is the content passed in...?
+}
+
+@include respond(big-desktop) { //width >1800
+    font-size: 75%;//  12/16 -- 75%  scaled up  from def of 10 px per rem now is 12 per rem
+    // this is the content passed in...?
+}
+
+}
+
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+    @include respond(tab-port) { //width<1200
+        padding: 0;
+    }
+}
+::selection {
+    background-color: $color-primary;
+    color:$color-white;
+}

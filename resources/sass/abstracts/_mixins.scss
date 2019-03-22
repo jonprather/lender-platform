@@ -1,0 +1,45 @@
+@mixin clearfix {
+    // takes whatever its in as & 
+    &::after {
+        content:"";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin centerAll {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+
+// $breakpoint options
+// phone
+// tab-port
+// tab-land
+// big-desktop
+// iys not whether its smaller if is dep on string so 
+// use ems so browers work plus user font size chanages work
+
+@mixin respond($breakpoint) {
+    @if ($breakpoint== phone) {
+        @media only screen and (max-width: 37.5em) {@content} //600px
+    }
+    @if ($breakpoint== tab-port) {
+        @media only screen and (max-width: 56.25em) {@content} //900px
+    }
+    @if ($breakpoint== tab-land) {
+        @media only screen and (max-width: 75em) {@content} //1200px
+    }
+    @if ($breakpoint== big-desktop) {
+        @media only screen and (min-width: 112.5em) {@content} //1800px
+    }
+}
+// only screen and is for best practice so not for printing eg
+/* */
+//
+// ok so he is optimizing for being able to change breakpoints by passing in a string such as phone into a mixin; that string will go to if statement 
+// and go to the right breakpoint
+// i could also use variables int the fontsize prop as well so can dry that upp  and make changes easy
