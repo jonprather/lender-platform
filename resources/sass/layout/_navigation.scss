@@ -1,22 +1,38 @@
 .navigation {
-//    display: inline-block;
+  display: inline-block;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+
     margin: 0 auto;
     &__list {
         list-style-type: none;
+        
+        margin: 0 auto;
     }
 
     &__item {
         text-decoration: none;
-        font-size: 1rem;
+        font-size: .9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        .fa {
+            font-size: .4rem;
+            padding-left:.3rem; 
+        }
+      display:inline-block;
+    //   margin: 0 auto;
+        
     }
    
     &__link  {
+        padding-right: 4rem;
         text-align: center;
         &:link,&:hover,&:active {
             text-decoration: none;
         }
     
-        float: left;
+        
 
     }
     @include clearfix;

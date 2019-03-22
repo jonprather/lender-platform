@@ -397,21 +397,35 @@ body {
 }
 
 .navigation {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   margin: 0 auto;
 }
 
 .navigation__list {
   list-style-type: none;
+  margin: 0 auto;
 }
 
 .navigation__item {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.navigation__item .fa {
+  font-size: 0.4rem;
+  padding-left: 0.3rem;
 }
 
 .navigation__link {
+  padding-right: 4rem;
   text-align: center;
-  float: left;
 }
 
 .navigation__link:link,
