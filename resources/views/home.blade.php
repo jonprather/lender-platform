@@ -18,18 +18,24 @@
 
     </head>
     <body>
-        <div class="brand">ill float this left and add the icon in here with css class to target it</div>
-       <div class = "navigation"> 
-           <ul class="navigation__list"> 
-           <li class="navigation__item"> <a class="navigation__link" > Home </a> </li>
-           <li class="navigation__item"> <a class="navigation__link" > Investor <i class="fa fa-chevron-down"></i>
-           </a> </li>
-           <li class="navigation__item"> <a class="navigation__link" > Borrower <i class="fa fa-chevron-down"></i> </a> </li>
-           <li class="navigation__item"> <a class="navigation__link" > Company </a> </li>
-           
-           </ul>
-          
-       </div>
+       
+            
+            <div class = "navigation">
+                    <div class="navigation__brand"><i class="fa fa-building"></i></div>
+                <div class = "navigation__box"> 
+                        
+                    <ul class="navigation__list"> 
+                    <li class="navigation__item"> <a class="navigation__link" > Home </a> </li>
+                    <li class="navigation__item"> <a class="navigation__link" > Investor <i class="fa fa-chevron-down"></i>
+                    </a> </li>
+                    <li class="navigation__item"> <a class="navigation__link" > Borrower <i class="fa fa-chevron-down"></i> </a> </li>
+                    <li class="navigation__item"> <a class="navigation__link" > Company </a> </li>
+                    
+                    </ul>
+                    
+                </div>
+            </div>
+
        {{-- not sure if this is exactly the BEM structure i want to use here but gtg --}}
        <div class="registration">
            <div class="registration__login">

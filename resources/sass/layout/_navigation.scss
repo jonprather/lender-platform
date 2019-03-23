@@ -1,10 +1,16 @@
 .navigation {
-  display: inline-block;
-  position: absolute;
-  left:50%;
-  transform: translateX(-50%);
+    @include clearfix;
 
-    margin: 0 auto;
+    &__box  {
+        display: inline-block;
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+         margin: 0 auto;
+    }
+  
+
+   
     &__list {
         list-style-type: none;
         
@@ -16,13 +22,13 @@
         font-size: .9rem;
         font-weight: 600;
         text-transform: uppercase;
+        display:inline-block;
         .fa {
             font-size: .4rem;
             padding-left:.3rem; 
         }
-      display:inline-block;
-    //   margin: 0 auto;
-        
+     
+  
     }
    
     &__link  {
@@ -35,7 +41,26 @@
         
 
     }
-    @include clearfix;
+    
+
+    &__brand {
+        display: inline-block;
+        width: 2.4rem;
+        height: 2.4rem;
+        font-size: 1.2rem;
+        // margin-left: .5rem;
+        border-radius:50%;
+        color: $color-white;
+        background-color: black;
+        text-align: center;
+       
+        .fa {
+            position: relative;
+            top:50%;
+            transform:translateY(-75%);
+            
+        }
+    }
 
 }
 

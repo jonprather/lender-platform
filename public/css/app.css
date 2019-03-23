@@ -396,7 +396,13 @@ body {
   clear: both;
 }
 
-.navigation {
+.navigation::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navigation__box {
   display: inline-block;
   position: absolute;
   left: 50%;
@@ -434,10 +440,22 @@ body {
   text-decoration: none;
 }
 
-.navigation::after {
-  content: "";
-  display: table;
-  clear: both;
+.navigation__brand {
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: black;
+  text-align: center;
+}
+
+.navigation__brand .fa {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-75%);
+          transform: translateY(-75%);
 }
 
 .btn,
