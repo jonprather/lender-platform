@@ -1,5 +1,6 @@
 .navigation {
-    @include clearfix;
+    text-decoration: none;
+       
 
     &__box  {
         display: inline-block;
@@ -19,7 +20,7 @@
 
     &__item {
         text-decoration: none;
-        font-size: .9rem;
+        font-size: $default-font-size;
         font-weight: 600;
         text-transform: uppercase;
         display:inline-block;
@@ -34,6 +35,12 @@
     &__link  {
         padding-right: 4rem;
         text-align: center;
+
+        &--less-padding {
+            margin-right: -2rem;
+            // background-color: blue;
+        }
+
         &:link,&:hover,&:active {
             text-decoration: none;
         }
@@ -44,24 +51,59 @@
     
 
     &__brand {
-        display: inline-block;
-        width: 2.4rem;
-        height: 2.4rem;
-        font-size: 1.2rem;
-        // margin-left: .5rem;
-        border-radius:50%;
-        color: $color-white;
-        background-color: black;
-        text-align: center;
-       
-        .fa {
-            position: relative;
-            top:50%;
-            transform:translateY(-75%);
-            
-        }
+         display: inline-block;
+         margin-top: -.5rem;
+
     }
 
+    &__logo-background {
+        position: relative;
+        display: inline-block;
+        // ok cool forgot to set this to inline-block was coausing a line break and put name on new line
+        width: 2.8rem;
+        height: 2.8rem;
+        font-size: 1.8rem;
+        // margin-left: .5rem;
+        border-radius:50%;
+        color:$color-white;
+        background-color: $color-brand;
+        text-align: center;
+        margin-right: .75rem;
+    }
+
+    &__name {
+        color:$color-primary;
+        font-weight:400;
+        font-size: 2rem;
+        display: inline-block;
+    }
+
+    &__authorization-box {
+        margin-top: -1rem;
+        float:right;
+        display: inline-block;
+        
+        position: relative;
+       
+    }
+
+    &__sign-up {
+        display: inline-block;
+        font-size: $default-font-size;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-right:-1.5rem;
+    }
+
+    &__login {
+        display: inline-block;  
+        font-size: $default-font-size;
+        font-weight: 600;
+        text-transform: uppercase;  
+           
+    }
+
+        
 }
 
 

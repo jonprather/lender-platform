@@ -20,27 +20,34 @@
     <body>
        
             
-            <div class = "navigation">
-                    <div class="navigation__brand"><i class="fa fa-building"></i></div>
-                <div class = "navigation__box"> 
-                        
-                    <ul class="navigation__list"> 
-                    <li class="navigation__item"> <a class="navigation__link" > Home </a> </li>
-                    <li class="navigation__item"> <a class="navigation__link" > Investor <i class="fa fa-chevron-down"></i>
-                    </a> </li>
-                    <li class="navigation__item"> <a class="navigation__link" > Borrower <i class="fa fa-chevron-down"></i> </a> </li>
-                    <li class="navigation__item"> <a class="navigation__link" > Company </a> </li>
-                    
-                    </ul>
-                    
+        <div class = "navigation">
+                <div class="navigation__brand"> 
+                    <div class="navigation__logo-background">
+                        <i class="fa fa-home"></i>
+                    </div>
+                    <h3 class="navigation__name">InstaLend</h3> 
                 </div>
+            <div class = "navigation__box"> 
+                <ul class="navigation__list"> 
+                    <li class="navigation__item"> <a href="#"  class="navigation__link" >Home</a></li>
+                    <li class="navigation__item"> <a href="#"  class="navigation__link" >Investor<i class="fa fa-chevron-down"></i></a></li>
+                    <li class="navigation__item"> <a href="#" class="navigation__link" >Borrower<i class="fa fa-chevron-down"></i> </a> </li>
+                    <li class="navigation__item"> <a href="#" class="navigation__link" >Company</a></li>
+                </ul>
             </div>
+            <div class="navigation__authorization-box">
+                    <div class="navigation__login"><a href="#" class="navigation__link navigation__link--less-padding">login</a></div>  
+                    <div class="navigation__sign-up"> <a href="#"  class="navigation__link  btn btn--green">Sign up</a></div>
+            </div>   
+        </div>
 
-       {{-- not sure if this is exactly the BEM structure i want to use here but gtg --}}
-       <div class="registration">
-           <div class="registration__login">
-              <a>login </a> </div>  
-           <div class="registration__sign-up">here will be a button and a link to another page ; can float right if needed or can put all of this into the navigation and make it a reusable blade layout</div>  
-       </div>
+        
+<!-- ok so left off with oadding/margin error that is the navagation-link class adds padding to the right
+this is fine for the center eles but not for the login and sign up its too much need more elegant solution than adding on a class that
+just minus's the margin right
+also need to make the top white space before the nav uniform due to different sizes and margins its nto quite right
+after those bug fixes it is on to the bg image with the caption text and button -->
+      
+     
     </body>
 </html>
