@@ -1,6 +1,6 @@
 .navigation {
     text-decoration: none;
-       
+      
 
     &__box  {
         display: inline-block;
@@ -24,21 +24,26 @@
         font-weight: 600;
         text-transform: uppercase;
         display:inline-block;
+        //nedd this vertically centered
+        padding-top:1rem;
+        padding-bottom: 1rem;
+        // padding being equal seems to do the trick
+        //but this does break on small screens so needs help there
         .fa {
             font-size: .4rem;
-            padding-left:.3rem; 
+            padding-left:.5rem; 
         }
      
   
     }
    
     &__link  {
+        color:$default-font-color;
         padding-right: 4rem;
         text-align: center;
 
         &--less-padding {
             margin-right: -2rem;
-            // background-color: blue;
         }
 
         &:link,&:hover,&:active {
@@ -52,7 +57,7 @@
 
     &__brand {
          display: inline-block;
-         margin-top: -.5rem;
+        // margin-top: -.5rem;
 
     }
 
@@ -79,9 +84,9 @@
     }
 
     &__authorization-box {
-        margin-top: -1rem;
+       // margin-top: -1rem;
         float:right;
-        display: inline-block;
+       // display: inline-block;
         
         position: relative;
        

@@ -19,27 +19,40 @@
     </head>
     <body>
        
+        <header class="header">
             
-        <div class = "navigation">
-                <div class="navigation__brand"> 
-                    <div class="navigation__logo-background">
-                        <i class="fa fa-home"></i>
+            <div class = "navigation">
+                    <div class="navigation__brand"> 
+                        <div class="navigation__logo-background">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <h3 class="navigation__name">InstaLend</h3> 
                     </div>
-                    <h3 class="navigation__name">InstaLend</h3> 
+                <div class = "navigation__box"> 
+                    <ul class="navigation__list"> 
+                        <li class="navigation__item"> <a href="#"  class="navigation__link" >Home</a></li>
+                        <li class="navigation__item"> <a href="#"  class="navigation__link" >Investor<i class="fa fa-chevron-down"></i></a></li>
+                        <li class="navigation__item"> <a href="#" class="navigation__link" >Borrower<i class="fa fa-chevron-down"></i> </a> </li>
+                        <li class="navigation__item"> <a href="#" class="navigation__link" >Company</a></li>
+                    </ul>
                 </div>
-            <div class = "navigation__box"> 
-                <ul class="navigation__list"> 
-                    <li class="navigation__item"> <a href="#"  class="navigation__link" >Home</a></li>
-                    <li class="navigation__item"> <a href="#"  class="navigation__link" >Investor<i class="fa fa-chevron-down"></i></a></li>
-                    <li class="navigation__item"> <a href="#" class="navigation__link" >Borrower<i class="fa fa-chevron-down"></i> </a> </li>
-                    <li class="navigation__item"> <a href="#" class="navigation__link" >Company</a></li>
-                </ul>
+                <div class="navigation__authorization-box">
+                        <div class="navigation__login"><a href="#" class="navigation__link navigation__link--less-padding">login</a></div>  
+                        <div class="navigation__sign-up"> <a href="#"  class="navigation__link  btn btn--green">Sign up</a></div>
+                </div>   
             </div>
-            <div class="navigation__authorization-box">
-                    <div class="navigation__login"><a href="#" class="navigation__link navigation__link--less-padding">login</a></div>  
-                    <div class="navigation__sign-up"> <a href="#"  class="navigation__link  btn btn--green">Sign up</a></div>
-            </div>   
-        </div>
+
+            <div class="header__text-box">
+                <div class="header__headline">
+                    <h1>Earn monthly cash flow</h1>
+                </div>
+                <p>Invest in senior real estate debp and earn monthly distributions</p>
+                <a href="#" class="btn btn--green">
+                    Get Started
+                </a>
+            </div>
+
+        </header>
 
         
 <!-- ok so left off with oadding/margin error that is the navagation-link class adds padding to the right
