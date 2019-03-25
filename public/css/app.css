@@ -180,23 +180,24 @@ body {
 }
 
 .heading-primary {
-  color: #FFFFFF;
-  text-transform: uppercase;
+  color: #3A5273;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   /* abve is for the shaky animatinion thing apparently whole thing moc=ves and this stops it.. */
-  margin-bottom: 6rem;
+  margin-top: 14rem;
+  line-height: 1.2;
   /* animatios optiz=mized for opacity and transform  x  think of neg to left pos to right like graph   -3-2-1 0 1 2 3 */
   /* for ani to work must specify animation name and duriation */
 }
 
 .heading-primary--main {
+  width: 24rem;
+  text-transform: capitalize;
   display: block;
   /* from inline to block so that will use all width and have line breaks whcih for on eover other makes sense */
-  font-size: 6rem;
+  font-size: 4rem;
   /* bc fint weight higher in h1 than we want we lower it to 400 */
   font-weight: 400;
-  letter-spacing: 3.5rem;
   /* give it that big wide look for outdoors */
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
@@ -204,7 +205,7 @@ body {
           animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  padding: 3rem;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -216,9 +217,8 @@ body {
 
 .heading-primary--sub {
   display: block;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 1.75rem;
   -webkit-animation-name: moveInRight;
           animation-name: moveInRight;
   -webkit-animation-duration: 1s;
@@ -273,10 +273,9 @@ body {
 }
 
 .paragraph {
-  font-size: 0.95rem;
-}
-
-.paragraph:not(:last-child) {
+  font-size: 1.25rem;
+  color: #6E7685;
+  font-weight: 200;
   margin-bottom: 3rem;
 }
 
@@ -491,11 +490,18 @@ body {
 .header {
   overflow: hidden;
   padding: 3rem;
-  background-image: url(/images/home-4.jpg?0b98293d5c3997936d6d0ac20d71416e);
   height: 96vh;
   background-size: cover;
   background-blend-mode: lighten;
   -webkit-background-blend-mode: lighten;
+}
+
+.header__text-box {
+  color: #818D9E;
+  font-size: 0.9rem;
+  width: 27rem;
+  font-weight: 100;
+  margin: 0 auto;
 }
 
 .btn,

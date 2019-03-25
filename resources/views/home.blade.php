@@ -42,14 +42,18 @@
                 </div>   
             </div>
 
-            <div class="header__text-box">
-                <div class="header__headline">
-                    <h1>Earn monthly cash flow</h1>
+            <div class="row">
+               
+                <div class="col-2-of-4" >
+                        
+                    <div class="header__text-box">
+                        <h1 class="heading-primary">
+                            <span  class='heading-primary--main' > Earn monthly cash flow </span>
+                            <span class="header-primary heading-primary--sub paragraph .u-margin-bottom-small">Invest in senior real estate debt opportunities and earn monthly distributions</span>
+                         </h1>
+                        <a href="#" class="btn btn--green">Get Started</a>
+                    </div>
                 </div>
-                <p>Invest in senior real estate debp and earn monthly distributions</p>
-                <a href="#" class="btn btn--green">
-                    Get Started
-                </a>
             </div>
 
         </header>
