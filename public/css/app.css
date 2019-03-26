@@ -150,7 +150,6 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -160,13 +159,13 @@ body {
 }
 
 ::-moz-selection {
-  background-color: #7ed56f;
-  color: #fff;
+  background-color: #3A5273;
+  color: #FFFFFF;
 }
 
 ::selection {
-  background-color: #7ed56f;
-  color: #fff;
+  background-color: #3A5273;
+  color: #FFFFFF;
 }
 
 body {
@@ -181,23 +180,24 @@ body {
 }
 
 .heading-primary {
-  color: #fff;
-  text-transform: uppercase;
+  color: #3A5273;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   /* abve is for the shaky animatinion thing apparently whole thing moc=ves and this stops it.. */
-  margin-bottom: 6rem;
+  margin-top: 14rem;
+  line-height: 1.2;
   /* animatios optiz=mized for opacity and transform  x  think of neg to left pos to right like graph   -3-2-1 0 1 2 3 */
   /* for ani to work must specify animation name and duriation */
 }
 
 .heading-primary--main {
+  width: 24rem;
+  text-transform: capitalize;
   display: block;
   /* from inline to block so that will use all width and have line breaks whcih for on eover other makes sense */
-  font-size: 6rem;
+  font-size: 4rem;
   /* bc fint weight higher in h1 than we want we lower it to 400 */
   font-weight: 400;
-  letter-spacing: 3.5rem;
   /* give it that big wide look for outdoors */
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
@@ -205,7 +205,7 @@ body {
           animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  padding: 3rem;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -217,9 +217,8 @@ body {
 
 .heading-primary--sub {
   display: block;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 1.75rem;
   -webkit-animation-name: moveInRight;
           animation-name: moveInRight;
   -webkit-animation-duration: 1s;
@@ -242,7 +241,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #55c57a, #28b485);
+  background-image: linear-gradient(to right, #6189BF, #28b485);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
@@ -268,16 +267,15 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 1.6rem;
+  font-size: 0.95rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .paragraph {
-  font-size: 1.6rem;
-}
-
-.paragraph:not(:last-child) {
+  font-size: 1.25rem;
+  color: #6E7685;
+  font-weight: 200;
   margin-bottom: 3rem;
 }
 
@@ -397,21 +395,46 @@ body {
 }
 
 .navigation {
+  text-decoration: none;
+}
+
+.navigation__box {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   margin: 0 auto;
 }
 
 .navigation__list {
   list-style-type: none;
+  margin: 0 auto;
 }
 
 .navigation__item {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navigation__item .fa {
+  font-size: 0.4rem;
+  padding-left: 0.5rem;
 }
 
 .navigation__link {
+  color: #818D9E;
+  padding-right: 4rem;
   text-align: center;
-  float: left;
+}
+
+.navigation__link--less-padding {
+  margin-right: -2rem;
 }
 
 .navigation__link:link,
@@ -420,10 +443,66 @@ body {
   text-decoration: none;
 }
 
-.navigation::after {
-  content: "";
-  display: table;
-  clear: both;
+.navigation__brand {
+  display: inline-block;
+}
+
+.navigation__logo-background {
+  position: relative;
+  display: inline-block;
+  width: 2.6rem;
+  height: 2.6rem;
+  font-size: 1.6rem;
+  border-radius: 50%;
+  color: #FFFFFF;
+  background-color: #3A5273;
+  text-align: center;
+  margin-right: 0.25rem;
+}
+
+.navigation__name {
+  color: #3A5273;
+  font-weight: 300;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.navigation__authorization-box {
+  float: right;
+  position: relative;
+}
+
+.navigation__sign-up {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: -1.5rem;
+}
+
+.navigation__login {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header {
+  overflow: hidden;
+  padding: 3rem;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(58, 82, 115, 0)), url(/images/home-4.jpg?0b98293d5c3997936d6d0ac20d71416e);
+  height: 96vh;
+  background-size: cover;
+  background-blend-mode: lighten;
+  -webkit-background-blend-mode: lighten;
+}
+
+.header__text-box {
+  color: #818D9E;
+  font-size: 0.9rem;
+  width: 27rem;
+  font-weight: 100;
+  margin: 0 auto;
 }
 
 .btn,
@@ -431,12 +510,12 @@ body {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: 1rem 3rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.6rem;
+  font-size: 0.95rem;
   border: none;
   cursor: pointer;
 }
@@ -462,21 +541,21 @@ body {
 }
 
 .btn--white {
-  background-color: #fff;
+  background-color: #FFFFFF;
   color: #777;
 }
 
 .btn--white::after {
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 .btn--green {
-  background-color: #7ed56f;
-  color: #fff;
+  background-color: #82D4BB;
+  color: #FFFFFF;
 }
 
 .btn--green::after {
-  background-color: #7ed56f;
+  background-color: #3A5273;
 }
 
 .btn::after {
@@ -501,18 +580,18 @@ body {
 
 .btn-text:link,
 .btn-text:visited {
-  font-size: 1.6rem;
-  color: #7ed56f;
+  font-size: 0.95rem;
+  color: #3A5273;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #7ed56f;
+  border-bottom: 1px solid #3A5273;
   padding: 3px;
   transition: all 0.2s;
 }
 
 .btn-text:hover {
-  background-color: #7ed56f;
-  color: #fff;
+  background-color: #3A5273;
+  color: #FFFFFF;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);

@@ -1,26 +1,114 @@
 .navigation {
-//    display: inline-block;
-    margin: 0 auto;
+    text-decoration: none;
+      
+
+    &__box  {
+        display: inline-block;
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+         margin: 0 auto;
+    }
+  
+
+   
     &__list {
         list-style-type: none;
+        
+        margin: 0 auto;
     }
 
     &__item {
         text-decoration: none;
-        font-size: 1rem;
+        font-size: $default-font-size;
+        font-weight: 600;
+        text-transform: uppercase;
+        display:inline-block;
+        //nedd this vertically centered
+        padding-top:1rem;
+        padding-bottom: 1rem;
+        // padding being equal seems to do the trick
+        //but this does break on small screens so needs help there
+        .fa {
+            font-size: .4rem;
+            padding-left:.5rem; 
+        }
+     
+  
     }
    
     &__link  {
+        color:$default-font-color;
+        padding-right: 4rem;
         text-align: center;
+
+        &--less-padding {
+            margin-right: -2rem;
+        }
+
         &:link,&:hover,&:active {
             text-decoration: none;
         }
     
-        float: left;
+        
 
     }
-    @include clearfix;
+    
 
+    &__brand {
+         display: inline-block;
+        // margin-top: -.5rem;
+
+    }
+
+    &__logo-background {
+        position: relative;
+        display: inline-block;
+        // ok cool forgot to set this to inline-block was coausing a line break and put name on new line
+        width: 2.6rem;
+        height: 2.6rem;
+        font-size: 1.6rem;
+        // margin-left: .5rem;
+        border-radius:50%;
+        color:$color-white;
+        background-color: $color-brand;
+        text-align: center;
+        margin-right: .25rem;
+    }
+
+    &__name {
+        color:$color-primary;
+        font-weight:300;
+        font-size: 2rem;
+        display: inline-block;
+    }
+
+    &__authorization-box {
+       // margin-top: -1rem;
+        float:right;
+       // display: inline-block;
+        
+        position: relative;
+       
+    }
+
+    &__sign-up {
+        display: inline-block;
+        font-size: $default-font-size;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-right:-1.5rem;
+    }
+
+    &__login {
+        display: inline-block;  
+        font-size: $default-font-size;
+        font-weight: 600;
+        text-transform: uppercase;  
+           
+    }
+
+        
 }
 
 

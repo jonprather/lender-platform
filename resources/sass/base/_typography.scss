@@ -11,38 +11,61 @@ body {
 }
 
 .heading-primary {
-    color:$color-white;
-    text-transform: uppercase;
+    color:$color-primary;
+   
     backface-visibility: hidden;
     /* abve is for the shaky animatinion thing apparently whole thing moc=ves and this stops it.. */
-    margin-bottom:6rem;
+    margin-top: 14rem;
+   // margin-bottom:1rem;
+   line-height: 1.2;
 
     &--main {
+        width:24rem;
+       // height: 12rem;
+        text-transform: capitalize;
         display: block;
         /* from inline to block so that will use all width and have line breaks whcih for on eover other makes sense */
-        font-size: 6rem;
+        font-size: 4rem;
         /* bc fint weight higher in h1 than we want we lower it to 400 */
         font-weight: 400;
-        letter-spacing: 3.5rem; 
+       // letter-spacing: 3.5rem; 
         /* give it that big wide look for outdoors */
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-in-out;
-         padding: 3rem;
+       
+       margin-bottom: 2rem;
 
          @include respond(phone) {  //<600
                     letter-spacing: 1rem;
                     font-size: 5rem; 
                }
-
-    
+            
+                  
+                   
+               
     }
+    
+    // &--main-2 {
+    //     text-transform: capitalize;
+    //     display: block;
+    //     /* from inline to block so that will use all width and have line breaks whcih for on eover other makes sense */
+    //     font-size: 3rem;
+    //     /* bc fint weight higher in h1 than we want we lower it to 400 */
+    //     font-weight: 400;
+    //    // letter-spacing: 3.5rem; 
+    //     /* give it that big wide look for outdoors */
+    //     animation-name: moveInLeft;
+    //     animation-duration: 1s;
+    //     animation-timing-function: ease-in-out;
+    //     margin-bottom: 2rem;
+    // }
     
     &--sub {
         display: block;
-        font-size:2rem;
+        font-size:1rem;
         font-weight: 700;
-        letter-spacing: 1.75rem;
+      //  letter-spacing: 1rem;
         animation-name: moveInRight;
         animation-duration: 1s;
         /* other ani props */
@@ -98,9 +121,11 @@ body {
     text-transform: uppercase;
 }
 .paragraph {
-    font-size: $default-font-size;
+    font-size: 1.25rem;
+    color: $default-font-color-paragraphs;
+    font-weight: 200;
 
-    &:not(:last-child) {
+    
         margin-bottom: 3rem;
-    }
+    
 }
