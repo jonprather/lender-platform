@@ -450,19 +450,19 @@ body {
 .navigation__logo-background {
   position: relative;
   display: inline-block;
-  width: 2.8rem;
-  height: 2.8rem;
-  font-size: 1.8rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  font-size: 1.6rem;
   border-radius: 50%;
   color: #FFFFFF;
   background-color: #3A5273;
   text-align: center;
-  margin-right: 0.75rem;
+  margin-right: 0.25rem;
 }
 
 .navigation__name {
   color: #3A5273;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 2rem;
   display: inline-block;
 }
@@ -490,6 +490,7 @@ body {
 .header {
   overflow: hidden;
   padding: 3rem;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(58, 82, 115, 0)), url(/images/home-4.jpg?0b98293d5c3997936d6d0ac20d71416e);
   height: 96vh;
   background-size: cover;
   background-blend-mode: lighten;
