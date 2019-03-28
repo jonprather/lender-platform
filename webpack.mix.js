@@ -13,6 +13,8 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css')
+   .version()
    .browserSync('http://localhost:8888/');
 
-   //.version()  this throughs off merges bc diff in master now 
+   //.version()  this throughs off merges bc diff in master now  but i need it to keep the browser updated not cached so mayb ejust clean the file when 
+//    go to merge have the version the master has

@@ -44,12 +44,12 @@
 
             <div class="row">
                
-                <div class="col-2-of-4" >
+                <div class="col-1-of-4" >
                         
                     <div class="header__text-box">
                         <h1 class="heading-primary">
                             <span  class='heading-primary--main' > Earn monthly cash flow </span>
-                            <span class="header-primary heading-primary--sub paragraph .u-margin-bottom-small">Invest in senior real estate debt opportunities and earn monthly distributions</span>
+                            <span class="header-primary heading-primary--sub paragraph .u-margin-bottom-small">Invest online in senior debt real estate opportunities and earn monthly distributions.</span>
                          </h1>
                         <a href="#" class="btn btn--green">Get Started</a>
                     </div>
@@ -57,6 +57,17 @@
             </div>
 
         </header>
+        <section class="section-about">
+          
+               
+               
+                    <div class="about__text-box">
+                    <h3 class="heading-secondary">About Us <h3>
+                    <p class="about__paragraph">InstaLend is an online lending platform that provides accredited investors with access to senior debt investment offerings.  </p>
+                    </div>
+                
+          
+        </section>   
 
         
 <!-- ok so left off with oadding/margin error that is the navagation-link class adds padding to the right

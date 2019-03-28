@@ -15,17 +15,17 @@ body {
    
     backface-visibility: hidden;
     /* abve is for the shaky animatinion thing apparently whole thing moc=ves and this stops it.. */
-    margin-top: 14rem;
+    margin-top: 16rem;
    // margin-bottom:1rem;
    line-height: 1.2;
 
     &--main {
-        width:24rem;
+        width:30rem;
        // height: 12rem;
         text-transform: capitalize;
         display: block;
         /* from inline to block so that will use all width and have line breaks whcih for on eover other makes sense */
-        font-size: 4rem;
+        font-size: 5rem;
         /* bc fint weight higher in h1 than we want we lower it to 400 */
         font-weight: 400;
        // letter-spacing: 3.5rem; 
@@ -84,12 +84,12 @@ body {
 }
 
 .heading-secondary {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
     // so we need it to not take up 100% of availble width of line so use inline
-    background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+    background-image: linear-gradient(to right,$color-primary-light,$color-primary);
     -webkit-background-clip: text;
     // clips baacground exactly where the text is so its cut out just like the text
     // but text tcovers it so
@@ -121,11 +121,12 @@ body {
     text-transform: uppercase;
 }
 .paragraph {
-    font-size: 1.25rem;
-    color: $default-font-color-paragraphs;
-    font-weight: 200;
-
-    
-        margin-bottom: 3rem;
+    display: inline-block;
+    width: 45rem;
+    font-size: 1.6rem;
+    color: $default-font-color-paragraph;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    margin-bottom: 3rem;
     
 }

@@ -39,7 +39,7 @@
    
     &__link  {
         color:$default-font-color;
-        padding-right: 4rem;
+        padding-right: 6rem;
         text-align: center;
 
         &--less-padding {
@@ -65,9 +65,9 @@
         position: relative;
         display: inline-block;
         // ok cool forgot to set this to inline-block was coausing a line break and put name on new line
-        width: 2.6rem;
-        height: 2.6rem;
-        font-size: 1.6rem;
+        width: 2.8rem;
+        height: 2.8rem;
+        font-size: 1.8rem;
         // margin-left: .5rem;
         border-radius:50%;
         color:$color-white;
@@ -78,8 +78,9 @@
 
     &__name {
         color:$color-primary;
-        font-weight:300;
-        font-size: 2rem;
+        font-weight:200;
+        margin-top: -.5rem;
+        font-size: 2.6rem;
         display: inline-block;
     }
 

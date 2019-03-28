@@ -184,18 +184,18 @@ body {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   /* abve is for the shaky animatinion thing apparently whole thing moc=ves and this stops it.. */
-  margin-top: 14rem;
+  margin-top: 16rem;
   line-height: 1.2;
   /* animatios optiz=mized for opacity and transform  x  think of neg to left pos to right like graph   -3-2-1 0 1 2 3 */
   /* for ani to work must specify animation name and duriation */
 }
 
 .heading-primary--main {
-  width: 24rem;
+  width: 30rem;
   text-transform: capitalize;
   display: block;
   /* from inline to block so that will use all width and have line breaks whcih for on eover other makes sense */
-  font-size: 4rem;
+  font-size: 5rem;
   /* bc fint weight higher in h1 than we want we lower it to 400 */
   font-weight: 400;
   /* give it that big wide look for outdoors */
@@ -237,11 +237,11 @@ body {
 }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #6189BF, #28b485);
+  background-image: linear-gradient(to right, #6189BF, #3A5273);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
@@ -267,15 +267,18 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .paragraph {
-  font-size: 1.25rem;
-  color: #6E7685;
-  font-weight: 200;
+  display: inline-block;
+  width: 45rem;
+  font-size: 1.6rem;
+  color: #596174;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
   margin-bottom: 3rem;
 }
 
@@ -414,7 +417,7 @@ body {
 
 .navigation__item {
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   display: inline-block;
@@ -429,7 +432,7 @@ body {
 
 .navigation__link {
   color: #818D9E;
-  padding-right: 4rem;
+  padding-right: 6rem;
   text-align: center;
 }
 
@@ -450,9 +453,9 @@ body {
 .navigation__logo-background {
   position: relative;
   display: inline-block;
-  width: 2.6rem;
-  height: 2.6rem;
-  font-size: 1.6rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  font-size: 1.8rem;
   border-radius: 50%;
   color: #FFFFFF;
   background-color: #3A5273;
@@ -462,8 +465,9 @@ body {
 
 .navigation__name {
   color: #3A5273;
-  font-weight: 300;
-  font-size: 2rem;
+  font-weight: 200;
+  margin-top: -0.5rem;
+  font-size: 2.6rem;
   display: inline-block;
 }
 
@@ -474,7 +478,7 @@ body {
 
 .navigation__sign-up {
   display: inline-block;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   margin-right: -1.5rem;
@@ -482,15 +486,15 @@ body {
 
 .navigation__login {
   display: inline-block;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .header {
   overflow: hidden;
-  padding: 3rem;
-  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(58, 82, 115, 0)), url(/images/home-4.jpg?0b98293d5c3997936d6d0ac20d71416e);
+  padding: 2.6rem 4rem 1rem 1.4rem;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(58, 82, 115, 0)), url(/images/home-1.jpg?7bca4d7ec1fc25f731a68d05040d58c3);
   height: 96vh;
   background-size: cover;
   background-blend-mode: lighten;
@@ -500,9 +504,24 @@ body {
 .header__text-box {
   color: #818D9E;
   font-size: 0.9rem;
-  width: 27rem;
   font-weight: 100;
   margin: 0 auto;
+}
+
+.about__text-box {
+  padding-top: 15rem;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10rem;
+  text-align: center;
+  width: 70rem;
+}
+
+.about__paragraph {
+  margin-top: 2.5rem;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #596174;
 }
 
 .btn,
@@ -515,7 +534,7 @@ body {
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   border: none;
   cursor: pointer;
 }
@@ -580,7 +599,7 @@ body {
 
 .btn-text:link,
 .btn-text:visited {
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   color: #3A5273;
   display: inline-block;
   text-decoration: none;
