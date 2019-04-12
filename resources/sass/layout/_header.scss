@@ -2,13 +2,14 @@
     
     overflow: hidden;
     padding: 2.6rem 4rem 1rem 1.4rem;
-     background-image: linear-gradient(to bottom right, rgba(white,.0), rgba($color-primary,.0)), url(../img/home-1.jpg);
+     background-image: linear-gradient(to bottom right, rgba(grey,.0), rgba($color-primary,.0)), url(../img/hero-home.jpg);
     // width: 100%;  linear-gradient(to bottom right, rgba($color-primary-light,.6), rgba($color-primary,.6)),
-     height: 96vh;
+     height: 100vh;
     background-size: cover;
-    background-blend-mode: lighten;
+    //background-blend-mode: lighten;
     // backdrop-filter: satuartion;
-    -webkit-background-blend-mode:lighten;
+    //-webkit-background-blend-mode:lighten;
+    
 
 
     &__text-box {
@@ -18,7 +19,17 @@
         font-weight: 100;
         margin: 0 auto;
        
+       
     }
 
+}
+
+.bg-photo {
+    height: 96vh;
+    background-size: cover;
+   // background-blend-mode: lighten;
+    width: 100%;
+    // filter: blur(5px) brightness(0.5);
+    position: absolute;
 }
 

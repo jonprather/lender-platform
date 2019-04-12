@@ -6,19 +6,124 @@
         display: block;
       margin:0 auto;
       
-        padding-bottom: 10rem;
+        padding-bottom: 3rem;
        // background-color: orange;
         text-align:center;
         width:70rem;
+        position: relative;
     }
 
     &__paragraph {
-        margin-top: 2.5rem;
-        font-size: 2.4rem;
-        font-weight: 300;
+        // margin-bottom: 10rem; //temp for styling so can see
+        text-align: center;
         color:$default-font-color-paragraph;
-       // width: 25rem;
+        &--large {
+            margin-top: 2.5rem;
+            font-size: 2.4rem;
+            font-weight: 300;
+           
+           // width: 25rem;
+        }
+        &--small {
+            font-size:1.5rem;
+        }
+        
+    }
+
+    &__number {
+      // margin: -2rem;
+      transition: all .6s ease-in-out;
+      width:10rem;
+        font-size: 10rem;
+        font-weight: 700;
+       position: relative;
+       top:10rem;
+       margin: 0 auto;
+       z-index: -1000;
+       opacity: .075;
+       
+        //transform: translateX(-50%);
+        &:hover {
+            opacity: .4;
+        }
+    }
+
+    &__check {
+        width: 18px;
+display: inline-block;
+position: relative;
+font-size: 2rem;
+z-index: 1000;
+
+
+// background-color: $color-secondary;
+// color:white;
+//border: 1px solid $color-secondary;
+
+transition: .6s all ease-in-out;
+
+        &::before {
+           
+            text-align: center;
+            border-radius: 1500px;
+            color:white;
+            background-color: $color-secondary;
+            display: inline-block;
+  //vertical-align: middle;
+  height: 2rem;
+  width: 2rem;
+//   //line-height: 2rem;
+  text-align: center;
+        }
+
+        //isnt exact ui or ux i want here ux needs js to work on enter big div  ui needs better bolor and contrast
+// &:hover {
+//     color: $color-secondary;
+//     background-color: white;
+// }
+        &-1 {
+            float:left;
+            margin-left: -1.75rem;
+            margin-top: -1rem;
+        }
+        &-2 {
+            position: relative;
+            left:48.5125%;
+            top:-1rem;
+          
+            //transform: translateX(-70%);
+        }
+        &-3 {
+            float: right;
+            margin-top: -1rem;
+            margin-right: -1.75rem;
+        }
     }
 }
+
+.section-about {
+    position: relative;
+}
+
+.horizontal-rule {
+    width:77.1rem; //50.25vw;
+    height: 10px;
+    margin:0 auto;
+    position: relative;
+    bottom:-45rem;
+    //background-color: black;
+    border-top:1.5px dotted $default-font-color-paragraph;
+    opacity: .4;
+
+}
+
+.green {
+    color:#82D4BB;// $color-secondary;
+    background-color: white; //white;
+}
+// .home-owner {
+//     width: 50rem;
+//     height: auto;
+// }
 //ha i fn forgot to import this shit in main css
 // also pro tip display inline-block was blocking the ability of margin 0 auto of working ; once i made it block it worked

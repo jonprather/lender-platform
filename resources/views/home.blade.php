@@ -12,6 +12,11 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         {{-- <link rel="stylesheet" href="css/app.css">\ --}}
         <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+        <script src="{{ asset('js/home.js') }}"></script>
        
         
         {{-- <script src="{{ mix('/js/app.js') }}"></script> --}}
@@ -20,7 +25,7 @@
     <body>
        
         <header class="header">
-            
+                {{-- <img src={{asset('../images/mtn.jpg')}} alt="picture of a mtn" class="bg-photo"> --}}
             <div class = "navigation">
                     <div class="navigation__brand"> 
                         <div class="navigation__logo-background">
@@ -58,15 +63,58 @@
 
         </header>
         <section class="section-about">
-          
-               
-               
-                    <div class="about__text-box">
-                    <h3 class="heading-secondary">About Us <h3>
-                    <p class="about__paragraph">InstaLend is an online lending platform that provides accredited investors with access to senior debt investment offerings.  </p>
-                    </div>
+                <div class="horizontal-rule">
+                        <i class="fa fa-check-circle about__check about__check-1"></i> 
+                        {{-- have to use js to highlight these as they are --}}
+                        <i class="fa fa-check-circle about__check about__check-2"></i>
+                        <i class="fa fa-check-circle about__check about__check-3"></i>
+                </div>
+                <div class="about__text-box">
+
+                        <h3 class="heading-secondary u-margin-bottom-small">About Us <h3>
+                        <p class="about__paragraph about__paragraph--large">InstaLend is an online lending platform that provides accredited investors with access to senior debt investment offerings.  </p>
+                        </div>
+
+          <div class="row">
                 
-          
+                <div class="col-1-of-3" >
+                       
+                    <div class="composition c-1"> 
+                        {{-- ok so need to put it in images foloder in public not in img folder in resources --}}
+                            <img src={{asset('/images/img-about1.svg')}} alt="home owner image" class="svg">
+                            {{-- <img src="img-about-home1.svg" alt="Kiwi standing on oval"> not htis one wrong address--}}
+                            <div class="about__number" > 1</div>  
+                            <h3 class="heading-tertiary u-margin-bottom-small-med">Borrowers <h3>
+                       <p class="about__paragraph about__paragraph--small">Borrowers seeking flexible short-term financing for acquiring and renovating residential real estate approach InstaLend.</p>
+                    </div>
+                </div>    
+                
+                <div class="col-1-of-3" >
+                        
+                        <div class="composition c-2"> 
+                                <img src={{asset('/images/img-about2.svg')}} alt="home owner image" class="svg">
+                                <div class="about__number" > 2</div>  
+                                <h3 class="heading-tertiary u-margin-bottom-small-med">instalend   <h3>
+                                <p class="about__paragraph about__paragraph--small"> InstaLend underwrites the borrower loan request to provide a senior debt investment opportunity to its Investors.</p>
+                        </div>
+                    </div>  
+
+                    <div class="col-1-of-3" >
+                            
+                            <div class="composition c-3"> 
+                                    <img src={{asset('/images/img-about3.svg')}} alt="home owner image" class="svg">
+                                    <div class="about__number" > 3</div>  
+                                    <h3 class="heading-tertiary u-margin-bottom-small-med">Investors   <h3>
+                                    <p class="about__paragraph about__paragraph--small"> Investors get access to income-generating short-term investment opportunities via InstaLend.</p>
+                            </div>
+                        </div>  
+                    
+            </div>
+                            
+                           
+                
+           
+           
         </section>   
 
         

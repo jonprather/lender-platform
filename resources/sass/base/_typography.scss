@@ -96,6 +96,7 @@ body {
     color:transparent;
     letter-spacing: .2rem;
     transition: all .2s;
+    text-align: center;
 
     
     @include respond(tab-port) {  //<900
@@ -117,8 +118,11 @@ body {
 
 .heading-tertiary {
     font-size: $default-font-size;
+    color: $color-primary;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
 }
 .paragraph {
     display: inline-block;
