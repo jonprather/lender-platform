@@ -12,12 +12,12 @@ body {
 
 .heading-primary {
     color:$color-primary;
-   
+   //letterspacng in header line spacing ain para and more space beteween
     backface-visibility: hidden;
     /* abve is for the shaky animatinion thing apparently whole thing moc=ves and this stops it.. */
-    margin-top: 16rem;
+    margin-top: 16.5rem;
    // margin-bottom:1rem;
-   line-height: 1.2;
+   line-height: 1.1;
 
     &--main {
         width:30rem;
@@ -34,7 +34,7 @@ body {
         animation-duration: 1s;
         animation-timing-function: ease-in-out;
        
-       margin-bottom: 2rem;
+       margin-bottom: 4rem;
 
          @include respond(phone) {  //<600
                     letter-spacing: 1rem;
@@ -131,6 +131,7 @@ body {
     color: $default-font-color-paragraph;
     font-weight: 100;
     letter-spacing: .1rem;
+    line-height: 3rem;
     margin-bottom: 3rem;
     
 }

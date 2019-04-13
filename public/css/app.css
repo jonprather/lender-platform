@@ -184,8 +184,8 @@ body {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   /* abve is for the shaky animatinion thing apparently whole thing moc=ves and this stops it.. */
-  margin-top: 16rem;
-  line-height: 1.2;
+  margin-top: 16.5rem;
+  line-height: 1.1;
   /* animatios optiz=mized for opacity and transform  x  think of neg to left pos to right like graph   -3-2-1 0 1 2 3 */
   /* for ani to work must specify animation name and duriation */
 }
@@ -205,7 +205,7 @@ body {
           animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -283,6 +283,7 @@ body {
   color: #596174;
   font-weight: 100;
   letter-spacing: 0.1rem;
+  line-height: 3rem;
   margin-bottom: 3rem;
 }
 
@@ -407,6 +408,7 @@ body {
 
 .navigation {
   text-decoration: none;
+  height: 8rem;
 }
 
 .navigation__box {
@@ -430,7 +432,6 @@ body {
   text-transform: uppercase;
   display: inline-block;
   padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .navigation__item .fa {
@@ -473,14 +474,17 @@ body {
 
 .navigation__name {
   color: #3A5273;
-  font-weight: 200;
-  margin-top: -0.5rem;
-  font-size: 2.6rem;
+  font-weight: 100;
+  font-size: 2.2rem;
   display: inline-block;
+  vertical-align: center;
 }
 
 .navigation__authorization-box {
+  margin-top: -0.15rem;
   float: right;
+  height: 100%;
+  padding: 1px 0;
   position: relative;
 }
 
@@ -512,13 +516,6 @@ body {
   font-size: 0.9rem;
   font-weight: 100;
   margin: 0 auto;
-}
-
-.bg-photo {
-  height: 96vh;
-  background-size: cover;
-  width: 100%;
-  position: absolute;
 }
 
 .about__text-box {
@@ -624,12 +621,10 @@ body {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1rem 3rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.2rem;
   border: none;
   cursor: pointer;
 }
@@ -663,15 +658,6 @@ body {
   background-color: #FFFFFF;
 }
 
-.btn--green {
-  background-color: #82D4BB;
-  color: #FFFFFF;
-}
-
-.btn--green::after {
-  background-color: #3A5273;
-}
-
 .btn::after {
   content: "";
   display: inline-block;
@@ -692,29 +678,24 @@ body {
           animation-fill-mode: backwards;
 }
 
-.btn-text:link,
-.btn-text:visited {
-  font-size: 1.2rem;
-  color: #3A5273;
-  display: inline-block;
-  text-decoration: none;
-  border-bottom: 1px solid #3A5273;
-  padding: 3px;
-  transition: all 0.2s;
-}
-
-.btn-text:hover {
-  background-color: #3A5273;
+.btn--green {
+  padding: 1.4rem 3.5rem;
+  background-color: #82D4BB;
   color: #FFFFFF;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
 }
 
-.btn-text:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+.btn--green-large {
+  background-color: #82D4BB;
+  color: #FFFFFF;
+  padding: 1.6rem 4rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 2rem 2.5rem;
+  letter-spacing: 0.8px;
+}
+
+.btn--green::after {
+  background-color: #3A5273;
 }
 
 .bg-video {

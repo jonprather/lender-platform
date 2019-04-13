@@ -56,7 +56,7 @@
                             <span  class='heading-primary--main' > Earn monthly cash flow </span>
                             <span class="header-primary heading-primary--sub paragraph .u-margin-bottom-small">Invest online in senior debt real estate opportunities and earn monthly distributions.</span>
                          </h1>
-                        <a href="#" class="btn btn--green">Get Started</a>
+                        <a href="#" class="btn btn--green-large">Success Stories</a>
                     </div>
                 </div>
             </div>

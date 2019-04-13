@@ -1,6 +1,6 @@
 .navigation {
     text-decoration: none;
-      
+      height: 8rem;
 
     &__box  {
         display: inline-block;
@@ -26,7 +26,7 @@
         display:inline-block;
         //nedd this vertically centered
         padding-top:1rem;
-        padding-bottom: 1rem;
+        // padding-bottom: 1rem;
         // padding being equal seems to do the trick
         //but this does break on small screens so needs help there
         .fa {
@@ -78,17 +78,22 @@
 
     &__name {
         color:$color-primary;
-        font-weight:200;
-        margin-top: -.5rem;
-        font-size: 2.6rem;
+        font-weight:100;
+       // margin-top: -.4rem;
+       
+        font-size: 2.2rem;
         display: inline-block;
+        vertical-align: center;
     }
 
     &__authorization-box {
-       // margin-top: -1rem;
+        margin-top:-.15rem;
+        // this is used to adjust vertical align of login and signup to other nav icons must be a better way
+        // also note that changing the padding of button will affect this
         float:right;
+        height: 100%;
        // display: inline-block;
-        
+        padding:1px 0;
         position: relative;
        
     }

@@ -6,12 +6,13 @@
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
-        padding: 1.0rem 3rem;
+        //  padding: 1.5rem 3.8rem;
         display: inline-block;
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
-        font-size: $default-font-size;
+        // font-size: $default-font-size;
+        // due to specificity this was overwriting the btn-large below
 
         //Change for the <button> element
         border: none;
@@ -45,14 +46,8 @@
         }
     }
 
-    &--green {
-        background-color: $color-secondary;
-        color: $color-white;
-
-        &::after {
-            background-color: $color-primary;
-        }
-    }
+   
+    
     
     &::after {
         content: "";
@@ -71,29 +66,55 @@
         animation: moveInBottom .5s ease-out .75s;
         animation-fill-mode: backwards;
     }
-}
 
-.btn-text {
-    &:link,
-    &:visited {
-        font-size: $default-font-size;
-        color: $color-primary;
-        display: inline-block;
-        text-decoration: none;
-        border-bottom: 1px solid $color-primary;
-        padding: 3px;
-        transition: all .2s;
-    }
-
-    &:hover {
-        background-color: $color-primary;
+    &--green {
+        padding: 1.4rem 3.5rem;
+       
+        // changing this padding here changes the vertical alignment of the nav elements - bad design
+        background-color: $color-secondary;
         color: $color-white;
-        box-shadow: 0 1rem 2rem rgba($color-black, .15);
-        transform: translateY(-2px);
+        &-large {
+            background-color: $color-secondary;
+            color: $color-white;
+            // this is 
+            padding: 1.6rem 4rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+            padding: 2.0rem 2.5rem;
+            letter-spacing: .8px;
+            
+        }
+        &::after {
+            background-color: $color-primary;
+        }
     }
 
-    &:active {
-        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
-        transform: translateY(0);
-    }
 }
+
+// .btn-text {
+//     &:link,
+//     &:visited {
+//         // font-size: $default-font-size;
+//         color: $color-primary;
+//         display: inline-block;
+//         text-decoration: none;
+//         border-bottom: 1px solid $color-primary;
+//         padding: 3px;
+//         transition: all .2s;
+//     }
+
+//     &:hover {
+//         background-color: $color-primary;
+//         color: $color-white;
+//         box-shadow: 0 1rem 2rem rgba($color-black, .15);
+//         transform: translateY(-2px);
+//     }
+
+//     &:active {
+//         box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+//         transform: translateY(0);
+//     }
+
+
+
+// }

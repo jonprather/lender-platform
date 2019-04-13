@@ -8,10 +8,8 @@ var eleToAddGreen;
 
     $(".composition").hover(
         
-        function() {console.log("You hovered over: ",this);
+        function() {
 
-          //  $(this).addClass("green");
-          //  $(".about__check").toggleClass("green");
           if ( $(this).hasClass("c-1") ) {
             eleToAddGreen = '.about__check-1';
           }
@@ -24,8 +22,8 @@ var eleToAddGreen;
          }
             $(eleToAddGreen).toggleClass("green");
             console.log("ele is : ",eleToAddGreen);
-            // cant select a psuedo class in jquery
-        //how to diffenenetiaite between the 3 only want 1 to glow at a time the one related by proximity could rewrite css so they are closer ie children
+            // cant select a psuedo class in jquery so need different solution or change how the icon is used
+      
 
         }
     )
