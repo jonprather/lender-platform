@@ -15,17 +15,18 @@ body {
    //letterspacng in header line spacing ain para and more space beteween
     backface-visibility: hidden;
     /* abve is for the shaky animatinion thing apparently whole thing moc=ves and this stops it.. */
-    margin-top: 16.5rem;
+    margin-top: 13rem;
    // margin-bottom:1rem;
    line-height: 1.1;
 
     &--main {
-        width:30rem;
+        width:35rem;
+        letter-spacing: .5px;
        // height: 12rem;
         text-transform: capitalize;
         display: block;
         /* from inline to block so that will use all width and have line breaks whcih for on eover other makes sense */
-        font-size: 5rem;
+        font-size: 5.5rem;
         /* bc fint weight higher in h1 than we want we lower it to 400 */
         font-weight: 400;
        // letter-spacing: 3.5rem; 
@@ -34,7 +35,7 @@ body {
         animation-duration: 1s;
         animation-timing-function: ease-in-out;
        
-       margin-bottom: 4rem;
+       margin-bottom: 2.5rem;
 
          @include respond(phone) {  //<600
                     letter-spacing: 1rem;

@@ -5,6 +5,7 @@
 //      width:33.333%;
 //   }
 //border-top: 1px dotted blue;
+width: 100%;
     text-align: center;
    
      &:hover > .about__number {
@@ -20,8 +21,15 @@
 }
 
 .svg {
-    background-color: white;
-    
+    height:16rem;
+    width: 100%;// 40rem;
+    margin:0 auto;
+    margin-bottom: -7rem;
+    &-2 {
+        margin-top:1rem;
+        height: 15rem;
+        // these two should add up to normal svg height above 16rem this is to correct the appearance that the center svg is larger
+    }
 }
 
 

@@ -1,6 +1,12 @@
 .navigation {
+    
+    &__container {
+       position: relative;
+        
+    }
     text-decoration: none;
       height: 8rem;
+      position: relative;
 
     &__box  {
         display: inline-block;
@@ -14,18 +20,20 @@
    
     &__list {
         list-style-type: none;
-        
         margin: 0 auto;
     }
 
     &__item {
+        &:first-child {
+            // margin-left: -2rem;
+        }
         text-decoration: none;
         font-size: $default-font-size;
         font-weight: 600;
         text-transform: uppercase;
         display:inline-block;
         //nedd this vertically centered
-        padding-top:1rem;
+        padding:.8rem;
         // padding-bottom: 1rem;
         // padding being equal seems to do the trick
         //but this does break on small screens so needs help there
@@ -33,20 +41,24 @@
             font-size: .4rem;
             padding-left:.5rem; 
         }
-     
+    //  variation between  item and link and auth box not alway vert centered
   
     }
    
     &__link  {
         color:$default-font-color;
-        padding-right: 6rem;
+        padding: 2rem 2.5rem;
+        // padding-right: 6rem;
+        // padding-left: 1rem;
+        display: inline;
+        vertical-align: center;
         text-align: center;
-
-        &--less-padding {
-            margin-right: -2rem;
-        }
+        // &--less-padding {
+        //     margin-right: -2rem;
+        // }
 
         &:link,&:hover,&:active {
+           
             text-decoration: none;
         }
     
@@ -87,14 +99,18 @@
     }
 
     &__authorization-box {
-        margin-top:-.15rem;
+       // margin-top:-.15rem;
         // this is used to adjust vertical align of login and signup to other nav icons must be a better way
         // also note that changing the padding of button will affect this
-        float:right;
-        height: 100%;
+       // float:right;
+       // height: 100%;
+        vertical-align: center;
        // display: inline-block;
-        padding:1px 0;
-        position: relative;
+        position: absolute;
+        top: 50%;
+        right:0;
+        transform: translateY(-50%);
+        //position: relative;
        
     }
 
@@ -111,6 +127,7 @@
         font-size: $default-font-size;
         font-weight: 600;
         text-transform: uppercase;  
+      
            
     }
 

@@ -184,18 +184,19 @@ body {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   /* abve is for the shaky animatinion thing apparently whole thing moc=ves and this stops it.. */
-  margin-top: 16.5rem;
+  margin-top: 13rem;
   line-height: 1.1;
   /* animatios optiz=mized for opacity and transform  x  think of neg to left pos to right like graph   -3-2-1 0 1 2 3 */
   /* for ani to work must specify animation name and duriation */
 }
 
 .heading-primary--main {
-  width: 30rem;
+  width: 35rem;
+  letter-spacing: 0.5px;
   text-transform: capitalize;
   display: block;
   /* from inline to block so that will use all width and have line breaks whcih for on eover other makes sense */
-  font-size: 5rem;
+  font-size: 5.5rem;
   /* bc fint weight higher in h1 than we want we lower it to 400 */
   font-weight: 400;
   /* give it that big wide look for outdoors */
@@ -205,7 +206,7 @@ body {
           animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -327,6 +328,121 @@ body {
   margin-top: 10rem !important;
 }
 
+.header {
+  overflow: hidden;
+  padding: 2.6rem 4rem 1rem 1.4rem;
+  background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0), rgba(58, 82, 115, 0)), url(/images/hero-home.jpg?b43490f6b1e099a23a2dea8b47e0a3e8);
+  height: 100vh;
+  background-size: cover;
+}
+
+.header__text-box {
+  color: #818D9E;
+  font-size: 0.9rem;
+  font-weight: 100;
+  margin: 0 auto;
+}
+
+.about__text-box {
+  padding-top: 2.5rem;
+  display: block;
+  margin: 10rem auto;
+  padding-bottom: 15rem;
+  text-align: center;
+  width: 70rem;
+  position: relative;
+}
+
+.about__paragraph {
+  text-align: center;
+  color: #596174;
+}
+
+.about__paragraph--large {
+  margin-top: 2.5rem;
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+.about__paragraph--small {
+  font-size: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 25rem;
+}
+
+.about__number {
+  transition: all 0.6s ease-in-out;
+  width: 10rem;
+  font-size: 10rem;
+  font-weight: 700;
+  position: relative;
+  top: 10rem;
+  margin: 0 auto;
+  z-index: -1000;
+  opacity: 0.075;
+}
+
+.about__number:hover {
+  opacity: 0.4;
+}
+
+.about__check {
+  width: 18px;
+  display: inline-block;
+  position: relative;
+  font-size: 2rem;
+  z-index: 1000;
+  transition: 0.6s all ease-in-out;
+}
+
+.about__check::before {
+  text-align: center;
+  border-radius: 1500px;
+  color: white;
+  background-color: #82D4BB;
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+}
+
+.about__check-1 {
+  float: left;
+  margin-left: -1.75rem;
+  margin-top: -1rem;
+}
+
+.about__check-2 {
+  position: relative;
+  left: 48.5125%;
+  top: -1rem;
+}
+
+.about__check-3 {
+  float: right;
+  margin-top: -1rem;
+  margin-right: -1.75rem;
+}
+
+.section-about {
+  position: relative;
+}
+
+.horizontal-rule {
+  width: 77.1rem;
+  height: 10px;
+  margin: 0 auto;
+  position: relative;
+  bottom: -73.5rem;
+  border-top: 1.5px dotted #596174;
+  opacity: 0.4;
+}
+
+.green {
+  color: #82D4BB;
+  background-color: white;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -409,6 +525,11 @@ body {
 .navigation {
   text-decoration: none;
   height: 8rem;
+  position: relative;
+}
+
+.navigation__container {
+  position: relative;
 }
 
 .navigation__box {
@@ -431,7 +552,7 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   display: inline-block;
-  padding-top: 1rem;
+  padding: 0.8rem;
 }
 
 .navigation__item .fa {
@@ -441,12 +562,10 @@ body {
 
 .navigation__link {
   color: #818D9E;
-  padding-right: 6rem;
+  padding: 2rem 2.5rem;
+  display: inline;
+  vertical-align: center;
   text-align: center;
-}
-
-.navigation__link--less-padding {
-  margin-right: -2rem;
 }
 
 .navigation__link:link,
@@ -481,11 +600,12 @@ body {
 }
 
 .navigation__authorization-box {
-  margin-top: -0.15rem;
-  float: right;
-  height: 100%;
-  padding: 1px 0;
-  position: relative;
+  vertical-align: center;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .navigation__sign-up {
@@ -503,117 +623,9 @@ body {
   text-transform: uppercase;
 }
 
-.header {
-  overflow: hidden;
-  padding: 2.6rem 4rem 1rem 1.4rem;
-  background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0), rgba(58, 82, 115, 0)), url(/images/hero-home.jpg?b43490f6b1e099a23a2dea8b47e0a3e8);
-  height: 100vh;
-  background-size: cover;
-}
-
-.header__text-box {
-  color: #818D9E;
-  font-size: 0.9rem;
-  font-weight: 100;
-  margin: 0 auto;
-}
-
-.about__text-box {
-  padding-top: 15rem;
-  display: block;
-  margin: 0 auto;
-  padding-bottom: 3rem;
-  text-align: center;
-  width: 70rem;
-  position: relative;
-}
-
-.about__paragraph {
-  text-align: center;
-  color: #596174;
-}
-
-.about__paragraph--large {
-  margin-top: 2.5rem;
-  font-size: 2.4rem;
-  font-weight: 300;
-}
-
-.about__paragraph--small {
-  font-size: 1.5rem;
-}
-
-.about__number {
-  transition: all 0.6s ease-in-out;
-  width: 10rem;
-  font-size: 10rem;
-  font-weight: 700;
-  position: relative;
-  top: 10rem;
-  margin: 0 auto;
-  z-index: -1000;
-  opacity: 0.075;
-}
-
-.about__number:hover {
-  opacity: 0.4;
-}
-
-.about__check {
-  width: 18px;
-  display: inline-block;
-  position: relative;
-  font-size: 2rem;
-  z-index: 1000;
-  transition: 0.6s all ease-in-out;
-}
-
-.about__check::before {
-  text-align: center;
-  border-radius: 1500px;
-  color: white;
-  background-color: #82D4BB;
-  display: inline-block;
-  height: 2rem;
-  width: 2rem;
-  text-align: center;
-}
-
-.about__check-1 {
-  float: left;
-  margin-left: -1.75rem;
-  margin-top: -1rem;
-}
-
-.about__check-2 {
-  position: relative;
-  left: 48.5125%;
-  top: -1rem;
-}
-
-.about__check-3 {
-  float: right;
-  margin-top: -1rem;
-  margin-right: -1.75rem;
-}
-
-.section-about {
-  position: relative;
-}
-
-.horizontal-rule {
-  width: 77.1rem;
-  height: 10px;
-  margin: 0 auto;
-  position: relative;
-  bottom: -45rem;
-  border-top: 1.5px dotted #596174;
-  opacity: 0.4;
-}
-
-.green {
-  color: #82D4BB;
-  background-color: white;
+.steps {
+  background-color: #F0F5FF;
+  padding-bottom: 20rem;
 }
 
 .btn,
@@ -633,12 +645,6 @@ body {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
-
-.btn:hover::after {
-  -webkit-transform: scaleX(1.4) scaleY(1.6);
-          transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
 }
 
 .btn:active,
@@ -695,7 +701,7 @@ body {
 }
 
 .btn--green::after {
-  background-color: #3A5273;
+  background-color: #82D4BB;
 }
 
 .bg-video {
@@ -717,6 +723,7 @@ body {
 }
 
 .composition {
+  width: 100%;
   text-align: center;
 }
 
@@ -725,7 +732,15 @@ body {
 }
 
 .svg {
-  background-color: white;
+  height: 16rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: -7rem;
+}
+
+.svg-2 {
+  margin-top: 1rem;
+  height: 15rem;
 }
 
 /* include pusedos just to prevent any strange behavior eg if had padding in affter but wasnt border box below its good practice.. */

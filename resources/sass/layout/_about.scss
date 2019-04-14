@@ -2,11 +2,11 @@
     //width: 100%;
     &__text-box {
         //width: 50rem;
-        padding-top:15rem; 
+        padding-top:2.5rem; 
         display: block;
-      margin:0 auto;
+      margin:10rem auto;
       
-        padding-bottom: 3rem;
+        padding-bottom: 15rem;
        // background-color: orange;
         text-align:center;
         width:70rem;
@@ -26,6 +26,8 @@
         }
         &--small {
             font-size:1.5rem;
+            padding-top: .75rem;
+            padding-bottom: 25rem; //this is just for dev not for use 
         }
         
     }
@@ -110,7 +112,7 @@ transition: .6s all ease-in-out;
     height: 10px;
     margin:0 auto;
     position: relative;
-    bottom:-45rem;
+    bottom:-73.5rem;
     //background-color: black;
     border-top:1.5px dotted $default-font-color-paragraph;
     opacity: .4;

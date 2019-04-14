@@ -27,6 +27,7 @@
         <header class="header">
                 {{-- <img src={{asset('../images/mtn.jpg')}} alt="picture of a mtn" class="bg-photo"> --}}
             <div class = "navigation">
+                <div class="navigation__container">
                     <div class="navigation__brand"> 
                         <div class="navigation__logo-background">
                             <i class="fa fa-home"></i>
@@ -41,10 +42,13 @@
                         <li class="navigation__item"> <a href="#" class="navigation__link" >Company</a></li>
                     </ul>
                 </div>
-                <div class="navigation__authorization-box">
-                        <div class="navigation__login"><a href="#" class="navigation__link navigation__link--less-padding">login</a></div>  
-                        <div class="navigation__sign-up"> <a href="#"  class="navigation__link  btn btn--green">Sign up</a></div>
-                </div>   
+                <ul class="navigation__authorization-box">
+                        <li class="navigation__login"><a href="#" class="navigation__link navigation__link--less-padding">login</a></li>  
+                        <li class="navigation__sign-up"> <a href="#"  class="navigation__link  btn btn--green">Sign up</a></li>
+                </ul>
+            </div>
+                    
+                   
             </div>
 
             <div class="row">
@@ -81,7 +85,8 @@
                        
                     <div class="composition c-1"> 
                         {{-- ok so need to put it in images foloder in public not in img folder in resources --}}
-                            <img src={{asset('/images/img-about1.svg')}} alt="home owner image" class="svg">
+                        
+                            <img src={{asset('/images/img-about1.svg')}} alt="home owner image" class="svg svg-1">
                             {{-- <img src="img-about-home1.svg" alt="Kiwi standing on oval"> not htis one wrong address--}}
                             <div class="about__number" > 1</div>  
                             <h3 class="heading-tertiary u-margin-bottom-small-med">Borrowers <h3>
@@ -92,7 +97,7 @@
                 <div class="col-1-of-3" >
                         
                         <div class="composition c-2"> 
-                                <img src={{asset('/images/img-about2.svg')}} alt="home owner image" class="svg">
+                                <img src={{asset('/images/img-about2.svg')}} alt="home owner image" class="svg svg-2">
                                 <div class="about__number" > 2</div>  
                                 <h3 class="heading-tertiary u-margin-bottom-small-med">instalend   <h3>
                                 <p class="about__paragraph about__paragraph--small"> InstaLend underwrites the borrower loan request to provide a senior debt investment opportunity to its Investors.</p>
@@ -102,7 +107,7 @@
                     <div class="col-1-of-3" >
                             
                             <div class="composition c-3"> 
-                                    <img src={{asset('/images/img-about3.svg')}} alt="home owner image" class="svg">
+                                    <img src={{asset('/images/img-about3.svg')}} alt="home owner image" class="svg svg-3">
                                     <div class="about__number" > 3</div>  
                                     <h3 class="heading-tertiary u-margin-bottom-small-med">Investors   <h3>
                                     <p class="about__paragraph about__paragraph--small"> Investors get access to income-generating short-term investment opportunities via InstaLend.</p>
@@ -116,7 +121,17 @@
            
            
         </section>   
-
+        <section class="section-2">
+            <div class="steps">
+                <div class="steps__container">
+                    <a class="steps__item"><span class="steps__item-1">1</span> </a>
+                    <a class="steps__item"><span class="steps__item-2">2</span> </a>
+                    <a class="steps__item"><span class="steps__item-3">3</span> </a>
+                    <a class="steps__item"><span class="steps__item-4">4</span> </a>
+                    <a class="steps__item"><span class="steps__item-5">5</span> </a>
+                </div>
+            </div>
+        </section>
         
 <!-- ok so left off with oadding/margin error that is the navagation-link class adds padding to the right
 this is fine for the center eles but not for the login and sign up its too much need more elegant solution than adding on a class that
