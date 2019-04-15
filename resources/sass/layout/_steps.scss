@@ -1,5 +1,78 @@
 .steps {
-   
-    background-color:  $color-background-grey;
-    padding-bottom: 20rem;
+    //background-color: #FFFFFF;
+     background-image: linear-gradient(122deg, #ffffff, #eef4ff, #eef4ff);
+    // color: #606879;
+    height: 100rem;
+     z-index: -100;
+      position: relative;
+    &__item {
+        margin-top: 20rem;
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 4rem;
+        border-radius: 4rem;
+         background-color: #F8FbFF;
+        border:1px solid #D8dde2;
+        margin: 10rem 5rem 0rem 5rem;
+        display: inline-block;
+        color: #B9c4DA;
+        position: relative;
+        //  z-index: 10000000;
+        
+      }
+      &__link {
+          display: none;
+        //   so writing broke the layout
+      }
+      
+      &__item::before{
+        content: '';
+        position: absolute;
+        top: 2rem;
+        left: -50rem;
+        width: 50rem;
+        height: .15rem;
+        background-color: #D8dde2;
+         z-index: -10;
+        //  weird only a neg z index will hide the line behind the circle
+      }
+      
+  
 }
+
+
+
+  
+//   li:first-child::before {
+//     //   margin-left: 10rem;
+//     //   width:100%;
+//     // display: none;
+//   }
+  
+  .active {
+    background: #F9FBFF;
+  }
+  
+//   .active ~ li {
+//     background: lightblue;
+//   }
+  
+//   .active ~ li::before {
+//     background: lightblue;
+//   }
+
+// hr {
+//     color:transparent;
+//     // border: .5px solid grey;
+//     width:80%;
+//     position: relative;
+//     display: inline-block;
+//     top:11.75rem;
+//     z-index: -1;
+//     // top:1rem;
+// }
+
+// to do match the colors ; including the active class get margins right and padding and background colors fade to b r.

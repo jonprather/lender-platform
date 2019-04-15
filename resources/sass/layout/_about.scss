@@ -108,11 +108,11 @@ transition: .6s all ease-in-out;
 }
 
 .horizontal-rule {
-    width:77.1rem; //50.25vw;
-    height: 10px;
+    width:77.5rem; //50.25vw;
+    height: 1px;
     margin:0 auto;
     position: relative;
-    bottom:-73.5rem;
+    top:-53rem;
     //background-color: black;
     border-top:1.5px dotted $default-font-color-paragraph;
     opacity: .4;

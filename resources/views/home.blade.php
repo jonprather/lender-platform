@@ -67,35 +67,24 @@
 
         </header>
         <section class="section-about">
-                <div class="horizontal-rule">
-                        <i class="fa fa-check-circle about__check about__check-1"></i> 
-                        {{-- have to use js to highlight these as they are --}}
-                        <i class="fa fa-check-circle about__check about__check-2"></i>
-                        <i class="fa fa-check-circle about__check about__check-3"></i>
-                </div>
-                <div class="about__text-box">
+              
+            <div class="about__text-box">
 
                         <h3 class="heading-secondary u-margin-bottom-small">About Us <h3>
                         <p class="about__paragraph about__paragraph--large">InstaLend is an online lending platform that provides accredited investors with access to senior debt investment offerings.  </p>
-                        </div>
+            </div>
 
-          <div class="row">
-                
+            <div class="row">
                 <div class="col-1-of-3" >
-                       
                     <div class="composition c-1"> 
-                        {{-- ok so need to put it in images foloder in public not in img folder in resources --}}
-                        
-                            <img src={{asset('/images/img-about1.svg')}} alt="home owner image" class="svg svg-1">
-                            {{-- <img src="img-about-home1.svg" alt="Kiwi standing on oval"> not htis one wrong address--}}
-                            <div class="about__number" > 1</div>  
-                            <h3 class="heading-tertiary u-margin-bottom-small-med">Borrowers <h3>
-                       <p class="about__paragraph about__paragraph--small">Borrowers seeking flexible short-term financing for acquiring and renovating residential real estate approach InstaLend.</p>
+                        <img src={{asset('/images/img-about1.svg')}} alt="home owner image" class="svg svg-1">
+                        <div class="about__number" > 1</div>  
+                        <h3 class="heading-tertiary u-margin-bottom-small-med">Borrowers <h3>
+                        <p class="about__paragraph about__paragraph--small">Borrowers seeking flexible short-term financing for acquiring and renovating residential real estate approach InstaLend.</p>
                     </div>
                 </div>    
                 
                 <div class="col-1-of-3" >
-                        
                         <div class="composition c-2"> 
                                 <img src={{asset('/images/img-about2.svg')}} alt="home owner image" class="svg svg-2">
                                 <div class="about__number" > 2</div>  
@@ -113,24 +102,35 @@
                                     <p class="about__paragraph about__paragraph--small"> Investors get access to income-generating short-term investment opportunities via InstaLend.</p>
                             </div>
                         </div>  
-                    
             </div>
-                            
-                           
-                
-           
-           
+            <div class="horizontal-rule">
+                    <i class="fa fa-check-circle about__check about__check-1"></i> 
+                    {{-- have to use js to highlight these as they are --}}
+                    <i class="fa fa-check-circle about__check about__check-2"></i>
+                    <i class="fa fa-check-circle about__check about__check-3"></i>
+            </div>
+                    
         </section>   
         <section class="section-2">
             <div class="steps">
                 <div class="steps__container">
-                    <a class="steps__item"><span class="steps__item-1">1</span> </a>
-                    <a class="steps__item"><span class="steps__item-2">2</span> </a>
-                    <a class="steps__item"><span class="steps__item-3">3</span> </a>
-                    <a class="steps__item"><span class="steps__item-4">4</span> </a>
-                    <a class="steps__item"><span class="steps__item-5">5</span> </a>
+                        <ul>
+                                <a class="steps__link"> <li class= "steps__item active">1</li> Sign Up</a>
+                                <a class="steps__link"> <li class= "steps__item">2</li> Browse</a>
+                                <a class="steps__link"> <li class= "steps__item">3</li>Review</a>
+                                <a class="steps__link"> <li class="steps__item">4</li> Invest</a>
+                                <a class="steps__link"> <li class= "steps__item">5</li> Monitor</a>
+                            
+                              </ul>  
+                    {{-- <hr class= "steps__line"> --}}
+                    {{-- <a class="steps__link"><span class="steps__item steps__item-1">1</span> </a>
+                    <a class="steps__link"><span class="steps__item steps__item-2">2</span> </a>
+                    <a class="steps__link"><span class="steps__item steps__item-3">3</span> </a>
+                    <a class="steps__link"><span class="steps__item steps__item-4">4</span> </a>
+                    <a class="steps__link"><span class="steps__item steps__item-5">5</span> </a> --}}
                 </div>
             </div>
+           
         </section>
         
 <!-- ok so left off with oadding/margin error that is the navagation-link class adds padding to the right
