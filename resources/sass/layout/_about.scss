@@ -119,7 +119,9 @@ transition: .6s all ease-in-out;
 
 }
 
-.green {
+// can use similar logic to active span
+// greeen before in css so that which is a before psuedo of green so i can add green to the related calss but only apply it to the class i neeed.
+.green  {
     color:#82D4BB;// $color-secondary;
     background-color: white; //white;
 }

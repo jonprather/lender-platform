@@ -1,44 +1,121 @@
+.section-2 {
+    background-image: linear-gradient(122deg, #ffffff, #eef4ff, #eef4ff);
+    position: relative;
+    padding-top: 1rem;
+    z-index: 10;
+    // negative z-index will cause elements to be non hoverable
+    
+}
 .steps {
+    margin-top: 20rem;
     //background-color: #FFFFFF;
-     background-image: linear-gradient(122deg, #ffffff, #eef4ff, #eef4ff);
+    
     // color: #606879;
     height: 100rem;
-     z-index: -100;
+     z-index: 100;
       position: relative;
+      display: block;
+      top:0;
+      left:0;
     &__item {
-        margin-top: 20rem;
-        width: 4rem;
-        height: 4rem;
+      //make a circle these must be equal ie width height line height  
+      height: 8rem;
+      width: 6rem;
+      display: inline-block;
+      top:0%;
+        left:0%;
         font-size: 1.25rem;
         font-weight: 700;
         text-align: center;
+        margin-left:26rem;
+        color: #B9c4DA;
+        text-transform: uppercase;
+        transition: all .2s ease-in-out;
+
+        &:not(:first-child) {
+            margin-left: 16.9rem;
+        }
+
+      & span {
+          display: inline-block;
+          position: relative;
+        //   top:100%;
+        //     leftt:50%;
+        //     transform: translateX(-50%);
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 1.2rem;
+        
+        
         line-height: 4rem;
         border-radius: 4rem;
+
          background-color: #F8FbFF;
         border:1px solid #D8dde2;
-        margin: 10rem 5rem 0rem 5rem;
+        //margin: 10rem 15rem 0rem 15rem;
         display: inline-block;
         color: #B9c4DA;
         position: relative;
-        //  z-index: 10000000;
+        // top:50%;
+        // left:50%;
+        // bottom:7.5%;
+        
         
       }
-      &__link {
-          display: none;
-        //   so writing broke the layout
-      }
-      
-      &__item::before{
+      & span::before{
         content: '';
         position: absolute;
         top: 2rem;
-        left: -50rem;
-        width: 50rem;
+        left: -60rem;
+        width: 60rem;
         height: .15rem;
+        margin: 0 15rem 0 0;
+
         background-color: #D8dde2;
          z-index: -10;
         //  weird only a neg z index will hide the line behind the circle
       }
+        //  z-index: 10000000;
+        &-category {
+            display: block;
+        }
+        
+      }
+
+
+    //   &__link {
+    //       display: inline-block;
+    //       height:25.55rem;
+    //       width:25.55rem;
+    //        position: relative;
+    //        color: #B9c4DA;
+           
+    //        text-align: center;
+    //        font-weight: 800;
+    //        text-transform: uppercase;
+    //        padding-top: 1rem;
+    //        font-size: 1rem;
+
+    //       & ~ span {
+    //            display: inline-block;
+
+    //       // margin-top: -12rem;
+
+    //       }
+        //   so writing broke the layout
+     // }
+      
+    //   &__item::before{
+    //     content: '';
+    //     position: absolute;
+    //     top: 2rem;
+    //     left: -50rem;
+    //     width: 50rem;
+    //     height: .15rem;
+    //     background-color: #D8dde2;
+    //      z-index: -10;
+    //     //  weird only a neg z index will hide the line behind the circle
+    //   }
       
   
 }
@@ -51,9 +128,14 @@
 //     //   width:100%;
 //     // display: none;
 //   }
+.active {
+    color: #607CB3;
+}
   
-  .active {
-    background: #F9FBFF;
+  .active span {
+    color: #ffffff;
+    background-color: #607CB3;
+   
   }
   
 //   .active ~ li {

@@ -114,20 +114,13 @@
         <section class="section-2">
             <div class="steps">
                 <div class="steps__container">
-                        <ul>
-                                <a class="steps__link"> <li class= "steps__item active">1</li> Sign Up</a>
-                                <a class="steps__link"> <li class= "steps__item">2</li> Browse</a>
-                                <a class="steps__link"> <li class= "steps__item">3</li>Review</a>
-                                <a class="steps__link"> <li class="steps__item">4</li> Invest</a>
-                                <a class="steps__link"> <li class= "steps__item">5</li> Monitor</a>
-                            
-                              </ul>  
-                    {{-- <hr class= "steps__line"> --}}
-                    {{-- <a class="steps__link"><span class="steps__item steps__item-1">1</span> </a>
-                    <a class="steps__link"><span class="steps__item steps__item-2">2</span> </a>
-                    <a class="steps__link"><span class="steps__item steps__item-3">3</span> </a>
-                    <a class="steps__link"><span class="steps__item steps__item-4">4</span> </a>
-                    <a class="steps__link"><span class="steps__item steps__item-5">5</span> </a> --}}
+                        
+                                <a class="steps__item"><span>1 </span> Sign Up</a>
+                                <a class="steps__item"><span>2</span> Browse</a>
+                                <a class="steps__item"><span>3 </span> Review</a>
+                                <a class="steps__item"> <span>4</span>  Invest</a>
+                                <a class="steps__item"> <span>5 </span> Monitor</a>
+                             
                 </div>
             </div>
            

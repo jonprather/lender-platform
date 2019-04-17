@@ -6,29 +6,35 @@ $(document).ready(function() {
 var eleToAddGreen;
     //also refactor this brad schiff style
 
-    $(".composition").hover(
+    // $(".composition").hover(
         
-        function() {
+    //     function() {
 
-          if ( $(this).hasClass("c-1") ) {
-            eleToAddGreen = '.about__check-1';
-          }
-         else if (  $(this).hasClass("c-2") ) {
-            eleToAddGreen = '.about__check-2';
-         }
+    //       if ( $(this).hasClass("c-1") ) {
+    //         eleToAddGreen = '.about__check-1';
+    //       }
+    //      else if (  $(this).hasClass("c-2") ) {
+    //         eleToAddGreen = '.about__check-2';
+    //      }
             
-         else if ( $(this).hasClass("c-3")  ) {
-            eleToAddGreen = '.about__check-3';
-         }
-            $(eleToAddGreen).toggleClass("green");
-            console.log("ele is : ",eleToAddGreen);
-            // cant select a psuedo class in jquery so need different solution or change how the icon is used
+    //      else if ( $(this).hasClass("c-3")  ) {
+    //         eleToAddGreen = '.about__check-3';
+    //      }
+    //         $(eleToAddGreen).toggleClass("green");
+    //         console.log("ele is : ",eleToAddGreen);
+    //         // cant select a psuedo class in jquery so need different solution or change how the icon is used
       
 
-        }
-    )
+    //     }
+    // );
 
     
+
+    $(".steps__item").click(function() {
+        $(".steps__item").removeClass("active");
+        console.log("you hovered me you bitch",this)
+        $(this).addClass("active");
+    })
 
 
 
