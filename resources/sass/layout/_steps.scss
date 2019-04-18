@@ -3,6 +3,7 @@
     position: relative;
     padding-top: 1rem;
     z-index: 10;
+    height: 130vh;
     // negative z-index will cause elements to be non hoverable
     
 }
@@ -11,7 +12,7 @@
     //background-color: #FFFFFF;
     
     // color: #606879;
-    height: 100rem;
+    height: 20rem;
      z-index: 100;
       position: relative;
       display: block;
@@ -32,37 +33,24 @@
         text-transform: uppercase;
         transition: all .2s ease-in-out;
 
-        &:not(:first-child) {
-            margin-left: 16.9rem;
-        }
+    &:not(:first-child) {
+        margin-left: 16.9rem;
+    }
 
-      & span {
-          display: inline-block;
-          position: relative;
-        //   top:100%;
-        //     leftt:50%;
-        //     transform: translateX(-50%);
+    & span {
+        display: inline-block;
+        position: relative;
         width: 4rem;
         height: 4rem;
         margin-bottom: 1.2rem;
-        
-        
         line-height: 4rem;
         border-radius: 4rem;
-
-         background-color: #F8FbFF;
         border:1px solid #D8dde2;
-        //margin: 10rem 15rem 0rem 15rem;
-        display: inline-block;
+        background-color: #F8FbFF;
         color: #B9c4DA;
-        position: relative;
-        // top:50%;
-        // left:50%;
-        // bottom:7.5%;
-        
-        
-      }
-      & span::before{
+        transition: all .2s ease-in-out;
+    }
+    & span::before{
         content: '';
         position: absolute;
         top: 2rem;
@@ -70,64 +58,79 @@
         width: 60rem;
         height: .15rem;
         margin: 0 15rem 0 0;
-
         background-color: #D8dde2;
          z-index: -10;
-        //  weird only a neg z index will hide the line behind the circle
-      }
-        //  z-index: 10000000;
+    }
         &-category {
             display: block;
         }
         
+      } //end item
+      
+      &__img {
+          height: 104.422rem;
+          width: auto;
+          margin-left: -20rem;
+          position: relative;
+          top:0;
+          left:-87%;
       }
 
+      &__icon {
+          padding-top: 6rem;
+          display:block;
+          margin-bottom: 2.2rem;
+      }
 
-    //   &__link {
-    //       display: inline-block;
-    //       height:25.55rem;
-    //       width:25.55rem;
-    //        position: relative;
-    //        color: #B9c4DA;
-           
-    //        text-align: center;
-    //        font-weight: 800;
-    //        text-transform: uppercase;
-    //        padding-top: 1rem;
-    //        font-size: 1rem;
+     &__number {
+        height:60.3rem;
+        width: auto;
+        z-index: -1;
+            // &-container {
+            //     position: relative;
+            //     height: 60.3rem;
+            //     width:40rem;
+            //     z-index: -10;
+            // }
+         position: absolute;
+        //  display: inline;
+         right:0%;
+         bottom:-5%;
+       
+      }
 
-    //       & ~ span {
-    //            display: inline-block;
+      &__text-box {
+        width:36rem;
+        z-index: 1;
+        & > h2 {
+            font-size: 3.5rem;
+            color:$color-primary;
+            font-weight: 300;
+            margin-bottom:1rem;
+            line-height: 4rem;
+            
 
-    //       // margin-top: -12rem;
+        }
 
-    //       }
-        //   so writing broke the layout
-     // }
-      
-    //   &__item::before{
-    //     content: '';
-    //     position: absolute;
-    //     top: 2rem;
-    //     left: -50rem;
-    //     width: 50rem;
-    //     height: .15rem;
-    //     background-color: #D8dde2;
-    //      z-index: -10;
-    //     //  weird only a neg z index will hide the line behind the circle
-    //   }
-      
-  
+        & > p {
+            font-size: 1.5rem;
+            color:$default-font-color-paragraph;
+            // font-weight: 300;
+            margin-bottom:2rem;
+
+        }
+
+        & > .btn {
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+      }
 }
 
 
 
   
-//   li:first-child::before {
-//     //   margin-left: 10rem;
-//     //   width:100%;
-//     // display: none;
-//   }
+
 .active {
     color: #607CB3;
 }
@@ -137,24 +140,15 @@
     background-color: #607CB3;
    
   }
-  
-//   .active ~ li {
-//     background: lightblue;
-//   }
-  
-//   .active ~ li::before {
-//     background: lightblue;
-//   }
 
-// hr {
-//     color:transparent;
-//     // border: .5px solid grey;
-//     width:80%;
-//     position: relative;
-//     display: inline-block;
-//     top:11.75rem;
-//     z-index: -1;
-//     // top:1rem;
-// }
-
-// to do match the colors ; including the active class get margins right and padding and background colors fade to b r.
+//   will be not active
+// so , is ust applied to both while .a.b must have both 
+.tab__pane {
+    display: none;
+    // transition: all .5s ease;  where how do i get this to work for when the tab pane comes in when active is applied
+}
+  .active.tab__pane {
+    display:block;
+   
+  }
+  

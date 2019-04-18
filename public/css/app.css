@@ -628,11 +628,12 @@ body {
   position: relative;
   padding-top: 1rem;
   z-index: 10;
+  height: 130vh;
 }
 
 .steps {
   margin-top: 20rem;
-  height: 100rem;
+  height: 20rem;
   z-index: 100;
   position: relative;
   display: block;
@@ -667,11 +668,10 @@ body {
   margin-bottom: 1.2rem;
   line-height: 4rem;
   border-radius: 4rem;
-  background-color: #F8FbFF;
   border: 1px solid #D8dde2;
-  display: inline-block;
+  background-color: #F8FbFF;
   color: #B9c4DA;
-  position: relative;
+  transition: all 0.2s ease-in-out;
 }
 
 .steps__item span::before {
@@ -690,6 +690,54 @@ body {
   display: block;
 }
 
+.steps__img {
+  height: 104.422rem;
+  width: auto;
+  margin-left: -20rem;
+  position: relative;
+  top: 0;
+  left: -87%;
+}
+
+.steps__icon {
+  padding-top: 6rem;
+  display: block;
+  margin-bottom: 2.2rem;
+}
+
+.steps__number {
+  height: 60.3rem;
+  width: auto;
+  z-index: -1;
+  position: absolute;
+  right: 0%;
+  bottom: -5%;
+}
+
+.steps__text-box {
+  width: 36rem;
+  z-index: 1;
+}
+
+.steps__text-box > h2 {
+  font-size: 3.5rem;
+  color: #3A5273;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+}
+
+.steps__text-box > p {
+  font-size: 1.5rem;
+  color: #596174;
+  margin-bottom: 2rem;
+}
+
+.steps__text-box > .btn {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
 .active {
   color: #607CB3;
 }
@@ -697,6 +745,14 @@ body {
 .active span {
   color: #ffffff;
   background-color: #607CB3;
+}
+
+.tab__pane {
+  display: none;
+}
+
+.active.tab__pane {
+  display: block;
 }
 
 .btn,

@@ -34,8 +34,25 @@ var eleToAddGreen;
         $(".steps__item").removeClass("active");
         console.log("you hovered me you bitch",this)
         $(this).addClass("active");
+
+        var id = $(this).attr('id');
+        console.log("this is id: ", id);
+        // can use this id to select apprprite tab pane
+
+        for (var i = 0 ; i <arrLinks.length;i++) {
+            if (id ===arrLinks[i]) {
+                $(arrPanes[i]).addClass("active");
+            }
+            else {
+                $(arrPanes[i]).removeClass("active");
+            }
+        }
+        
     })
 
+
+    var arrLinks = ["step-link-sign-up","step-link-browse","step-link-review","step-link-invest","step-link-monitor"];
+    var arrPanes = ["#step-pane-sign-up","#step-pane-browse","#step-pane-review","#step-pane-invest","#step-pane-monitor"];
 
 
 });

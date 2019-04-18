@@ -58,7 +58,7 @@
                     <div class="header__text-box">
                         <h1 class="heading-primary">
                             <span  class='heading-primary--main' > Earn monthly cash flow </span>
-                            <span class="header-primary heading-primary--sub paragraph .u-margin-bottom-small">Invest online in senior debt real estate opportunities and earn monthly distributions.</span>
+                            <span class="header-primary heading-primary--sub paragraph u-margin-bottom-small">Invest online in senior debt real estate opportunities and earn monthly distributions.</span>
                          </h1>
                         <a href="#" class="btn btn--green-large">Success Stories</a>
                     </div>
@@ -115,13 +115,61 @@
             <div class="steps">
                 <div class="steps__container">
                         
-                                <a class="steps__item"><span>1 </span> Sign Up</a>
-                                <a class="steps__item"><span>2</span> Browse</a>
-                                <a class="steps__item"><span>3 </span> Review</a>
-                                <a class="steps__item"> <span>4</span>  Invest</a>
-                                <a class="steps__item"> <span>5 </span> Monitor</a>
+                                <a class="steps__item active" id="step-link-sign-up"><span>1 </span> Sign Up</a>
+                                <a class="steps__item" id="step-link-browse"><span>2</span> Browse</a>
+                                <a class="steps__item" id="step-link-review"><span>3 </span> Review</a>
+                                <a class="steps__item" id="step-link-invest"> <span>4</span>  Invest</a>
+                                <a class="steps__item" id="step-link-monitor"> <span>5 </span> Monitor</a>
                              
                 </div>
+            </div>
+
+
+            <div class="row">
+                <div class="tab" >
+                    <div class="tab__pane active" id="step-pane-sign-up">    
+                        <div class="col-1-of-2" >
+                        <div class="steps__image-container">
+                                <img src={{asset('/images/img-home-sec2-1.png')}} alt="sign up image" class="steps__img steps__img-1">
+                        </div>
+                        </div>
+                        <div class="col-1-of-2" >
+                            <div class="steps__number-container">
+                            <img src={{asset('/images/img-home-step-1.svg')}} alt="number 1" class="steps__number steps__number-1">
+                            </div>
+                            <div class="steps__text-box">
+                                    <img src={{asset('/images/icon-home-sec2-1.svg')}} alt="sign up icon" class="steps__icon steps__icon-1">
+                                    <h2 class="">Sign Up for <br> InstaLend</h2>
+                                    <p>Accredited investors can sign up for a FREE InstaLend account within 30 seconds.</p>
+                                    <a href="#"  class="btn btn--green">Get Started</a>
+                                    
+                            </div>
+                                
+                        </div>
+                    </div> 
+
+                    <div class="tab__pane" id="step-pane-browse">    
+                            <div class="col-1-of-2" >
+                            <div class="steps__image-container">
+                                    <img src={{asset('/images/img-home-sec2-2.png')}} alt="sign up image" class="steps__img steps__img-2">
+                            </div>
+                            </div>
+                            <div class="col-1-of-2" >
+                                {{-- <div class="steps__number-container"> --}}
+                                <img src={{asset('/images/img-home-step-2.svg')}} alt="number 2" class="steps__number steps__number-2">
+                                {{-- </div> --}}
+                                <div class="steps__text-box">
+                                        <img src={{asset('/images/icon-home-sec2-2.svg')}} alt="sign up icon" class="steps__icon steps__icon-2">
+                                        <h2 class="">Browse <br> Investment Listings</h2>
+                                        <p>Upon signing up, investors gain full access to review all of our listed senior debt offerings.</p>
+                                        <a href="#"  class="btn btn--green">Get Started</a>
+                                        
+                                </div>
+                                    
+                            </div>
+                        </div> 
+
+                </div>       
             </div>
            
         </section>

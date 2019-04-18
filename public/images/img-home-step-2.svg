@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="477px" height="673px" viewBox="0 0 477 673" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="13.4477196%" y1="51.8940617%" x2="50%" y2="81.1409065%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.274371603" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2" transform="translate(-1307.000000, -112.000000)" fill="url(#linearGradient-1)">
+            <g id="03-PRODUCT" transform="translate(-311.000000, -345.000000)">
+                <g id="background" transform="translate(605.000000, 0.000000)">
+                    <path d="M1489.95566,669.971812 C1489.95566,539.351812 1391.05766,457.247813 1263.23666,457.247813 C1124.21966,457.247813 1013.19266,552.413812 1013.19266,671.837812 L1154.07566,671.837812 C1154.07566,622.388812 1199.79266,589.733812 1261.37066,589.733812 C1317.35066,589.733812 1349.07266,624.254812 1349.07266,665.306812 C1349.07266,794.060812 1013.19266,782.864812 1013.19266,995.588813 L1013.19266,1129.00781 L1489.95566,1129.00781 L1489.95566,995.588813 L1157.80766,995.588813 C1157.80766,882.695812 1489.95566,893.891813 1489.95566,669.971812 Z" id="2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

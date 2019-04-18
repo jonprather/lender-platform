@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="414px" height="663px" viewBox="0 0 414 663" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="13.4477196%" y1="51.8940617%" x2="50%" y2="81.1409065%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.274371603" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1" transform="translate(-1448.000000, -190.000000)" fill="url(#linearGradient-1)">
+            <g id="03-PRODUCT" transform="translate(-311.000000, 0.000000)">
+                <g id="background" transform="translate(605.000000, 0.000000)">
+                    <polygon id="1" points="1431.64597 719.209906 1431.64597 190.198906 1160.14297 245.245906 1160.14297 384.262906 1290.76297 358.138906 1290.76297 719.209906 1154.54497 719.209906 1154.54497 852.628906 1567.86397 852.628906 1567.86397 719.209906"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
